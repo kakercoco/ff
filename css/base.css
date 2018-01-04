@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+body{
+	background-color: #efefef;
+}
+.bg-fff{
+	background-color: #fff;
+}
+.tac{
+	text-align: center;
+}
+.tar{
+	text-align: right;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.mcolor{
+	color: rgb(0,153,0);
+}
