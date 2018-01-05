@@ -14,8 +14,8 @@
 			<div class="login bg-fff">
 				<h3 class="tac mcolor">FF-深度交友平台</h3>
 				<ul class="nav nav-pills nav-justified">
-				  <li role="presentation" class="active col-sm-3" onclick="showHide()"><a href="#">登录</a></li>
-				  <li role="presentation" class="col-sm-3" onclick="showHide()"><a href="#">注册</a></li>
+				  <li role="presentation" class="active col-sm-3" onclick="showHide(0)"><a href="#">登录</a></li>
+				  <li role="presentation" class="col-sm-3" onclick="showHide(1)"><a href="#">注册</a></li>
 				</ul>
 				<div class="tabA" style="display: block;">
 					<form class="form-horizontal">
@@ -83,11 +83,11 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			function showHide(){
+			function showHide(id){
 				var show=document.getElementsByClassName('tabA')[0]
 				var hide=document.getElementsByClassName('tabB')[0]
 				console.log(show.style.display)
-				if (show.style.display=='block') {
+				if (id==1) {
 					show.style.display="none"
 					hide.style.display="block"
 				} else{
