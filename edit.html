@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FF-深度交友</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/summernote.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/summernote.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/summernote-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<img src="https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" class="logo fl"/>
+			<ul class="tabbar">
+				<li ><a href="index.html">收到</a></li>
+				<li ><a href="create.html" >原创</a></li>
+				<li ><a href="friend.html" >信友</a></li>
+				<li ><a href="inter.html">互动</a></li>
+				<laber class="search">
+					<input type="text" placeholder="搜索热门"  class="fl"/>
+					<span class="glyphicon glyphicon-search"></span>
+					<span class="glyphicon glyphicon-remove-sign"></span>
+				</laber>
+				<li ><a href="treasure.html">藏宝阁</a></li>
+				<li ><a href="edit.html" class="mcolor">写写</a></li>
+				<li ><a href="self.html">我的</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="summernote"></div>
+			<button onclick="getCode()">获取内容</button>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+			 $('.summernote').summernote({
+			        height: 800,
+			        tabsize: 2,
+			        lang: 'zh-CN'
+			    });
+			})
+			    function getCode(){
+			    	var sHTML = $('#summernote').summernote('code');;
+			    	console.log(sHTML)
+			    }
+			
+		</script>
+	</body>
+</html>
